@@ -1,7 +1,7 @@
-📊 Spam Email Detection Dashboard (R + Shiny)
+📊 Spam Email Detection Dashboard (R + Shiny):-
 This project is a Spam Email Detection Dashboard built using R and Shiny, designed to classify emails as spam or ham using Natural Language Processing (NLP) techniques and a Naive Bayes machine learning model. The dashboard allows users to manually test email content, upload datasets, visualize word frequency via word clouds, and view model performance — all through an interactive web interface.
 
-✨ Features
+✨ Features:-
 🔍 Spam Prediction: Enter email content and get instant prediction using a trained Naive Bayes classifier.
 
 📤 Bulk Classification: Upload a .csv file of emails and classify them in bulk.
@@ -12,7 +12,7 @@ This project is a Spam Email Detection Dashboard built using R and Shiny, design
 
 📊 Interactive UI: Built using Shiny for a responsive and interactive user experience.
 
-🧠 Model & Methodology
+🧠 Model & Methodology:-
 Algorithm: Naive Bayes
 
 Preprocessing:
@@ -27,7 +27,7 @@ Feature Extraction: Document-Term Matrix (DTM) with sparsity reduction
 
 Training Dataset: spam_ham_dataset.csv
 
-🛠️ Tech Stack
+🛠️ Tech Stack:-
 Component	Tool/Library
 Language	R
 UI Framework	Shiny
@@ -35,37 +35,32 @@ ML Algorithm	Naive Bayes (e1071)
 NLP Tools	tm, wordcloud
 Dataset Format	CSV
 
-📂 File Structure
-bash
-Copy
-Edit
-📁 spam-email-shiny/
-│
-├── spam_ham_dataset.csv         # Training dataset
-├── app.R or shiny_script.R      # Main Shiny app script
-├── README.md                    # Documentation
-└── requirements.txt (optional)  # R packages used
+
 🚀 How to Run
 Install Required Packages:
+
 install.packages(c("shiny", "tm", "wordcloud", "e1071", "caret"))
+
 Run the App:
 shiny::runApp("path_to_your_script")
-📈 Model Performance
+
+
+📈 Model Performance:-
 (Based on test data – can be improved by tuning preprocessing or model parameters)
 
-Metric	Value
+Metric	Value:-
 Accuracy	95%
 Precision	93%
 Recall	92%
 
-📌 Notes
+📌 Notes:-
 The uploaded dataset must contain a text column for successful classification.
 
 The word cloud is dynamically generated from the text entered in the prediction tab.
 
 Word cloud size can be controlled using a slider in the UI.
 
-🧪 Example Use Case
+🧪 Example Use Case:-
 A student or researcher exploring spam detection using classical ML in R.
 
 A quick tool to test spam classification logic for email-based datasets.
